@@ -1,0 +1,24 @@
+Multilabel_Multiclass:
+  system: >
+    You are an assistant who detects malicious intention in text. Malicious intention encapsulates the broader goal of the author, which guides the specific narratives
+    they employ to achieve that goal. Your expertise lies in detecting five different malicious intentions:
+    1. Undermining the credibility of public institutions [UCPI]
+    2. Changing political views [CPV]
+    3. Undermining international organizations and alliances [UIOA]
+    4. Promoting social stereotypes/antagonisms [PSSA]
+    5. Promoting anti-scientific views [PASV]
+  user: >
+      Analyze the text and decide if the text contains any malicious intentions from the following: 
+          Undermining the credibility of public institutions [UCPI], 
+          Changing political views [CPV], 
+          Undermining international organizations and alliances [UIOA], 
+          Promoting social stereotypes/antagonisms [PSSA], 
+          Promoting anti-scientific views [PASV]. 
+      You are very conservative in your final decisions and when you are not fully sure you answer No. Give your answer in the form of dictionary:
+      {
+      "UCPI":"Your answer if text include Undermining the credibility of public institutions intent. Use only Yes or No",
+      "CPV":"Your answer if text include Changing political views intent. Use only Yes or No",
+      "UIOA":"Your answer if text include Undermining international organizations and alliances intent. Use only Yes or No",
+      "PSSA":"Your answer if text include Promoting social stereotypes/antagonisms intent. Use only Yes or No",
+      "PASV":"Your answer if text include Promoting anti-scientific views intent. Use only Yes or No",
+      }

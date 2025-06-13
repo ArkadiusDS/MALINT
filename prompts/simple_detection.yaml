@@ -1,0 +1,18 @@
+VaN:
+  system: >
+    You are an AI assistant trained to detect fake news.
+  user: >
+    Analyze the given text and determine if it is real or fake news.
+    Answer only 'real' or 'fake'. Give answer in the form of dictionary: {"response": "Here 'fake' or 'real'"}
+Z-CoT:
+  system: >
+    You are an AI assistant trained to detect fake news.
+  user: >
+    Deeply Analyze the given text, think step by-step, and determine if it is real or fake news.
+    Answer only 'real' or 'fake'. Give answer in the form of dictionary: {"response": "Here 'fake' or 'real'"}
+DeF_Spec:
+  system: >
+    You are an AI assistant trained to detect fake news.
+  user: >
+    Analyze the tone, language, sources to determine if the text is real (supported by facts) or fake (misleading info). 
+    If real, respond only 'True', if fake, respond only 'False'. Give answer in the form of dictionary: {"response": "Here 'False' or 'True'"}

@@ -1,0 +1,25 @@
+ICoT_One_Detailed_MultiStep:
+  VaN:
+    system: >
+      You are an AI assistant trained to detect fake news.
+    user_part_1: >
+      The text you are about to analyze has already been reviewed to identify any malicious intentions. The results of this analysis are presented below:
+    user_part_2: >
+      Keep in mind that above results may include errors and not all explanations may be right. Knowing this now it is your turn to analyze text and decide if text include fake news.
+      Analyze the given text and determine if it is real or fake news. Answer only 'real' or 'fake'. Give answer in the form of dictionary: {"response": "Here 'fake' or 'real'"}
+  Z-CoT:
+    system: >
+      You are an AI assistant trained to detect fake news.
+    user_part_1: >
+      The text you are about to analyze has already been reviewed to identify any malicious intentions. The results of this analysis are presented below:
+    user_part_2: >
+      Keep in mind that above results may include errors and not all explanations may be right. Knowing this now it is your turn to analyze text and decide if text include fake news.
+      Deeply Analyze the given text, think step by-step, and determine if it is real or fake news. Answer only 'real' or 'fake'. Give answer in the form of dictionary: {"response": "Here 'fake' or 'real'"}
+  DeF_Spec:
+    system: >
+      You are an AI assistant trained to detect fake news.
+    user_part_1: >
+      The text you are about to analyze has already been reviewed to identify any malicious intentions. The results of this analysis are presented below:
+    user_part_2: >
+      Keep in mind that above results may include errors and not all explanations may be right. Knowing this now it is your turn to analyze text and decide if text include fake news.
+      Analyze the tone, language, sources to determine if the text is real (supported by facts) or fake (misleading info). If real, respond only 'True', if fake, respond only 'False'. Give answer in the form of dictionary: {"response": "Here 'False' or 'True'"}
