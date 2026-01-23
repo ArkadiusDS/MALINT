@@ -1,0 +1,143 @@
+CPV:
+  data:
+    train: data/MALINT/train.csv
+    validation: data/MALINT/valid.csv
+    test: data/MALINT/test.csv
+  tokenizer:
+    truncation: True
+    padding: True
+    max_length: 256
+  models:
+    - model: google-bert/bert-base-uncased
+      output: output/training/bert_base
+      valid_metrics: metrics/valid/bert_base
+      test_metrics: metrics/test/bert_base
+      hyperparameters:
+        eval_strategy: steps
+        per_device_train_batch_size: 8
+        per_device_eval_batch_size: 8
+        num_train_epochs: 5
+        warmup_ratio: 0.1
+        learning_rate: 0.00002
+        weight_decay: 0.01
+        fp16: True
+        metric_for_best_model: f1
+        load_best_model_at_end: True
+        save_total_limit: 2
+        greater_is_better: True
+        save_strategy: steps
+        eval_steps: 50
+    - model: google-bert/bert-large-uncased
+      output: output/training/bert_large
+      valid_metrics: metrics/valid/bert_large
+      test_metrics: metrics/test/bert_large
+      hyperparameters:
+        eval_strategy: steps
+        per_device_train_batch_size: 8
+        per_device_eval_batch_size: 8
+        num_train_epochs: 5
+        warmup_ratio: 0.06
+        learning_rate: 0.00002
+        weight_decay: 0.01
+        fp16: True
+        metric_for_best_model: f1
+        load_best_model_at_end: True
+        save_total_limit: 2
+        greater_is_better: True
+        save_strategy: steps
+        eval_steps: 50
+    - model: FacebookAI/roberta-large
+      output: output/training/roberta_large
+      valid_metrics: metrics/valid/roberta_large
+      test_metrics: metrics/test/roberta_large
+      hyperparameters:
+        eval_strategy: steps
+        per_device_train_batch_size: 8
+        per_device_eval_batch_size: 8
+        num_train_epochs: 5
+        warmup_ratio: 0.1
+        learning_rate: 0.00002
+        weight_decay: 0.03
+        fp16: True
+        metric_for_best_model: f1
+        load_best_model_at_end: True
+        save_total_limit: 2
+        greater_is_better: True
+        save_strategy: steps
+        eval_steps: 50
+    - model: FacebookAI/roberta-base
+      output: output/training/roberta_base
+      valid_metrics: metrics/valid/roberta_base
+      test_metrics: metrics/test/roberta_base
+      hyperparameters:
+        eval_strategy: steps
+        per_device_train_batch_size: 8
+        per_device_eval_batch_size: 8
+        num_train_epochs: 5
+        warmup_ratio: 0.06
+        learning_rate: 0.00002
+        weight_decay: 0.1
+        fp16: True
+        metric_for_best_model: f1
+        load_best_model_at_end: True
+        save_total_limit: 2
+        greater_is_better: True
+        save_strategy: steps
+        eval_steps: 50
+    - model: microsoft/deberta-v3-large
+      output: output/training/deberta_v3_large
+      valid_metrics: metrics/valid/deberta_v3_large
+      test_metrics: metrics/test/deberta_v3_large
+      hyperparameters:
+        eval_strategy: steps
+        per_device_train_batch_size: 8
+        per_device_eval_batch_size: 8
+        num_train_epochs: 5
+        warmup_ratio: 0.1
+        learning_rate: 0.00001
+        weight_decay: 0.05
+        fp16: True
+        metric_for_best_model: f1
+        load_best_model_at_end: True
+        save_total_limit: 2
+        greater_is_better: True
+        save_strategy: steps
+        eval_steps: 50
+    - model: microsoft/deberta-v3-base
+      output: output/training/deberta_v3_base
+      valid_metrics: metrics/valid/deberta_v3_base
+      test_metrics: metrics/test/deberta_v3_base
+      hyperparameters:
+        eval_strategy: steps
+        per_device_train_batch_size: 8
+        per_device_eval_batch_size: 8
+        num_train_epochs: 5
+        warmup_ratio: 0.06
+        learning_rate: 0.00001
+        weight_decay: 0.03
+        fp16: True
+        metric_for_best_model: f1
+        load_best_model_at_end: True
+        save_total_limit: 2
+        greater_is_better: True
+        save_strategy: steps
+        eval_steps: 50
+    - model: distilbert/distilbert-base-uncased
+      output: output/training/distilbert_base
+      valid_metrics: metrics/valid/distilbert_base
+      test_metrics: metrics/test/distilbert_base
+      hyperparameters:
+        eval_strategy: steps
+        per_device_train_batch_size: 8
+        per_device_eval_batch_size: 8
+        num_train_epochs: 5
+        warmup_ratio: 0.06
+        learning_rate: 0.00002
+        weight_decay: 0.01
+        fp16: True
+        metric_for_best_model: f1
+        load_best_model_at_end: True
+        save_total_limit: 2
+        greater_is_better: True
+        save_strategy: steps
+        eval_steps: 50
