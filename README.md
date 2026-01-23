@@ -134,6 +134,8 @@ Includes:
 * `valid.csv`
 * `MALINT_benchmark.csv`
 
+> **Note:** To use this dataset, the articles must be scraped from the provided URLs. Alternatively, researchers may contact the main author of the paper introducing the dataset. Contact details are available at [amodzelewski.com](https://amodzelewski.com).
+
 Other datasets (below datasets together with MALINT were used to evaluate Intent-base Inoculation):
 
 * CoAID
