@@ -14,9 +14,6 @@
       Labruna, Tiziano  and
       Da San Martino, Giovanni  and
       Wierzbicki, Adam",
-    editor = "Demberg, Vera  and
-      Inui, Kentaro  and
-      Marquez, Llu{\'i}s",
     booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
     month = mar,
     year = "2026",
