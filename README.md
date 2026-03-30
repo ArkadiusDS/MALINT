@@ -2,6 +2,33 @@
 
 ---
 
+## Citation
+
+```bibtex
+@inproceedings{modzelewski-etal-2026-malicious,
+    title = "{MAL}icious {INT}ent Dataset and Inoculating {LLM}s for Enhanced Disinformation Detection",
+    author = "Modzelewski, Arkadiusz  and
+      Sosnowski, Witold  and
+      Papadopulos, Eleni  and
+      Sartori, Elisa  and
+      Labruna, Tiziano  and
+      Da San Martino, Giovanni  and
+      Wierzbicki, Adam",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.144/",
+    doi = "10.18653/v1/2026.eacl-long.144",
+    pages = "3125--3148",
+    ISBN = "979-8-89176-380-7"
+}
+```
+
 ## Overview
 
 Disinformation is not only about content but also the **underlying malicious intents**. This repository explores capabilities of SLMs such as BERT and LLMs like Llama 3.3 70B in binary detection of malicious intent categories and multilabel classification of all intent categories from proposed taxonomy in MALINT dataset.
