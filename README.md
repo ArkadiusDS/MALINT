@@ -20,9 +20,7 @@
     address = "Rabat, Morocco",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2026.eacl-long.144/",
-    doi = "10.18653/v1/2026.eacl-long.144",
-    pages = "3125--3148",
-    ISBN = "979-8-89176-380-7"
+    doi = "10.18653/v1/2026.eacl-long.144"
 }
 ```
 
